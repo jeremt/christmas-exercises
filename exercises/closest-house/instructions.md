@@ -35,3 +35,11 @@ closestHouse({x: 22, y: -4}, maisons); // retourne '5bis Boulevard du vin chaud'
 ```
 
 > 💡 Pour ce qui est des formules, notre ami Euclide peut certainement t'aider un peu et notre ami Google encore plus !
+
+## Aller plus loin 🚀
+
+Si tu as trouvé une solution qui fonctionne c'est déjà très très bien, mais notre cher père Noël se déplace beaucoup et a beaucoup de maisons à livrer.
+
+Essaye d'optimiser la fonction pour avoir de meilleures performances lorsqu'on l'appelle beaucoup de fois sur un grand nombre de maisons avec différentes positions de père Noël.
+
+Si tu as des pistes voir des solutions pour améliorer l'algo, viens en discuter avec nous [sur Discord](https://discord.gg/4WSd9Qn4eA).
