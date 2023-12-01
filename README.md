@@ -6,9 +6,9 @@ Ce repo est un exemple de création d'exercice custom sur le site de [CodePasspo
 
 ## Comment tester les exercices ?
 
-Il suffit d'aller sur l'url https://codepassport.dev/js/exercises/custom?repo=YOUR_REPO&slug=YOUR_EXERCISE.
+Il suffit d'aller sur l'url `https://codepassport.dev/js/exercises/custom?repo=YOUR_REPO&slug=YOUR_EXERCISE`.
 
-Dans cet exemple, `YOUR_REPO` sera composé de votre pseudo github et du nom du repo, c'est à dire `jeremt/christmas-exercises` et `YOUR_EXERCISE` sera `closest-house`, ce qui donne : [https://codepassport.dev/js/exercises/custom?repo=jeremt/christmas-exercises&slug=closest-house](https://codepassport.dev/js/exercises/custom?repo=jeremt/christmas-exercises&slug=closest-house).
+Dans cet exemple, `YOUR_REPO` sera composé de votre pseudo github et du nom du repo, c'est à dire `jeremt/christmas-exercises` et `YOUR_EXERCISE` sera `closest-house`, ce qui donne : https://codepassport.dev/js/exercises/custom?repo=jeremt/christmas-exercises&slug=closest-house.
 
 ## Comment créer des exercices ?
 
