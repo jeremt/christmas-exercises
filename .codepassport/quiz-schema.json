@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "required": ["title", "questions"],
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "A short descriptive name for your quiz",
+            "minLength": 1
+        },
+        "questions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "required": ["question", "answers", "solution"],
+                "properties": {
+                    "question": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "The question to display (markdown supported)"
+                    },
+                    "image": {
+                        "type": "string",
+                        "description": "An optional image url to display above the question"
+                    },
+                    "answers": {
+                        "type": "array",
+                        "description": "An array of string representing each possible answer (markdown supported)",
+                        "minItems": 2,
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "solution": {
+                        "type": "integer",
+                        "description": "The index of the right answer (starting from 0)",
+                        "minimum": 0
+                    },
+                    "explanations": {
+                        "type": "string",
+                        "description": "An optional extra explanation when the user doesn't find the right answer (markdown supported)",
+                        "minLength": 1
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "../.codepassport/quiz-schema.json",
+    "title": "Test quiz",
+    "questions": [
+        {
+            "question": "Les questions peuvent-elle contenir du **Markdown** ?",
+            "answers": ["_Oui_ et les réponses aussi", "Non"],
+            "solution": 0
+        },
+        {
+            "question": "Et même du code highlight ? 🤩",
+            "answers": ["`const answerHasCode = true;`{:js}", "ou pas ? 🤔"],
+            "solution": 0
+        },
+        {
+            "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2Y2Z2RlMjExZnBqMHNpMnVpbzFlbDF5enlrZ2FkcTY1NWk5ZHp2byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OPU6wzx8JrHna/giphy.gif",
+            "question": "Comment on fait, quand on se trompe pour comprendre pourquoi ?",
+            "answers": ["On peut ajouter des explications en cas d'erreur (comme ici)", "On se débrouille !"],
+            "solution": 0,
+            "explanations": "Même si dans le cas présent c'est pas très utile"
+        }
+    ]
+}

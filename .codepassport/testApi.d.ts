@@ -1,3 +1,5 @@
+import testApi from './testApi?raw';
+
 type ValueType = unknown;
 
 interface TestResultBase {
@@ -6,20 +8,20 @@ interface TestResultBase {
 }
 
 export interface TestAssertResult extends TestResultBase {
-    type: "assert";
+    type: 'assert';
     successMessage?: string;
     failedMessage: string;
 }
 
 export interface CallFuncResult extends TestResultBase {
-    type: "callFunc";
+    type: 'callFunc';
     exists: boolean;
     funcName: string;
     params: ValueType[];
 }
 
 export interface TestFuncResult extends TestResultBase {
-    type: "func";
+    type: 'func';
     exists: boolean;
     funcName: string;
     params: ValueType[];
@@ -28,7 +30,7 @@ export interface TestFuncResult extends TestResultBase {
 }
 
 export interface TestAsyncFuncResult extends TestResultBase {
-    type: "func";
+    type: 'func';
     exists: boolean;
     funcName: string;
     params: ValueType[];
@@ -37,13 +39,13 @@ export interface TestAsyncFuncResult extends TestResultBase {
 }
 
 export interface TestLogResult extends TestResultBase {
-    type: "logs";
+    type: 'logs';
     result: string;
     expected: string;
 }
 
 export interface TestThrowResult extends TestResultBase {
-    type: "throw";
+    type: 'throw';
     exists: boolean;
     funcName: string;
     params: ValueType[];
@@ -52,14 +54,14 @@ export interface TestThrowResult extends TestResultBase {
 }
 
 export interface TestVarResult extends TestResultBase {
-    type: "var";
+    type: 'var';
     varName: string;
     value: ValueType;
     expected: ValueType;
 }
 
 export interface TestHTMLResult extends TestResultBase {
-    type: "html";
+    type: 'html';
     el: {
         __isHTMLElement: boolean;
         tag: string;
@@ -71,7 +73,7 @@ export interface TestHTMLResult extends TestResultBase {
 }
 
 export interface TestCSSPropertyResult extends TestResultBase {
-    type: "css-property";
+    type: 'css-property';
     el: {
         __isHTMLElement: boolean;
         tag: string;
@@ -84,7 +86,7 @@ export interface TestCSSPropertyResult extends TestResultBase {
 }
 
 export interface TestCSSPropertiesResult extends TestResultBase {
-    type: "css-properties";
+    type: 'css-properties';
     el: {
         __isHTMLElement: boolean;
         tag: string;
@@ -96,8 +98,8 @@ export interface TestCSSPropertiesResult extends TestResultBase {
 }
 
 export interface TriggerEventResult extends TestResultBase {
-    type: "triggerEvent";
-    eventType: Event["type"];
+    type: 'triggerEvent';
+    eventType: Event['type'];
     newValue?: string;
     el: {
         __isHTMLElement: boolean;
